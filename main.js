@@ -6,6 +6,6 @@ setTimeout(function(){
         });
     jQuery(".j-textarea").each(
         function(){
-            jQuery(this).val("Good Job.");
+            jQuery(this).val("Good Job."); //这里是点评的内容
         });
 },2000)
