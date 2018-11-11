@@ -16,7 +16,7 @@ check100btn.onclick = function() {
 		});
 	},2000)
 }
-$(".u-greentab.j-tabitem.f-f0.last").after("<br>");
+$(".u-greentab.j-tabitem.f-f0.last").after("<br>"); // 此处有未能解决的问题：第一次运行时<br>标签不能被识别
 $(".u-greentab.j-tabitem.f-f0.last").after(check100btn);
 $(".u-greentab.j-tabitem.f-f0.last").after("<br><br>");
 
