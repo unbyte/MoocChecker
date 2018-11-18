@@ -1,4 +1,3 @@
-
 // 增加了一个可重用按钮，嵌入于左侧目录
 // Console执行脚本后可关闭，点击按钮即可
 
@@ -24,7 +23,7 @@ $(".u-greentab.j-tabitem.f-f0.last").after(br);
 
 
 
-// 请先使用以下代码
+// 下面的代码已经废弃
 
 document.body.appendChild(document.createElement('script')).src='//code.jquery.com/jquery-1.9.1.min.js';
 setTimeout(function(){
