@@ -7,8 +7,8 @@ function fuckIt() {
     if (times > 0 && times < 21) {
         let fuckYou = setInterval(function () {
             if (!times) {
-                window.clearInterval(fuckYou);
                 document.getElementsByClassName('j-backbtn')[0].click();
+                window.clearInterval(fuckYou);
             }
             times--;
             [].forEach.call(document.getElementsByClassName('s'), e => {
@@ -20,7 +20,7 @@ function fuckIt() {
             document.getElementsByClassName('j-submitbtn')[0].click();
             if (!times)
                 document.getElementsByClassName('j-gotonext')[0].click();
-        }, 2000);
+        }, 2500);
     } else {
         alert("次数错误，范围1 ~ 20");
     }
