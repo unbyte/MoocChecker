@@ -12,17 +12,16 @@ function fuckIt() {
                 return false;
             }
             times--;
-            [].forEach.call(document.getElementsByClassName('s'), e => {
-                e.children[e.children.length - 1].children[0].checked = true
-            });
-            [].forEach.call(document.getElementsByClassName('j-textarea'), e => {
-                e.value = judge
-            });
-            document.getElementsByClassName('j-submitbtn')[0].click();
-            if (!times)
-                setTimeout(function () {
-                    document.getElementsByClassName('j-gotonext')[0].click();
-                }, 1000);
+            document.getElementsByClassName('j-gotonext')[0].click();
+            setTimeout(function () {
+                [].forEach.call(document.getElementsByClassName('s'), e => {
+                    e.children[e.children.length - 1].children[0].checked = true
+                });
+                [].forEach.call(document.getElementsByClassName('j-textarea'), e => {
+                    e.value = judge
+                });
+                document.getElementsByClassName('j-submitbtn')[0].click();
+            }, 1500);
             console.log(times + 1);
         }, 2500);
     } else {
@@ -30,5 +29,3 @@ function fuckIt() {
         return false;
     }
 }
-
-
