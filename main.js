@@ -9,6 +9,7 @@ function fuckIt() {
             if (!times) {
                 document.getElementsByClassName('j-backbtn')[0].click();
                 window.clearInterval(fuckYou);
+                return false;
             }
             times--;
             document.getElementsByClassName('j-gotonext')[0].click();
@@ -25,8 +26,8 @@ function fuckIt() {
         }, 2500);
     } else {
         alert("次数错误，范围1 ~ 20");
+        return false;
     }
-    return false;
 }
 
 
