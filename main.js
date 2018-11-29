@@ -11,18 +11,22 @@ function fuckIt() {
                 window.clearInterval(fuckYou);
             }
             times--;
-            [].forEach.call(document.getElementsByClassName('s'), e => {
-                e.children[e.children.length - 1].children[0].checked = true
-            });
-            [].forEach.call(document.getElementsByClassName('j-textarea'), e => {
-                e.value = judge
-            });
-            document.getElementsByClassName('j-submitbtn')[0].click();
-            if (!times)
-                document.getElementsByClassName('j-gotonext')[0].click();
+            document.getElementsByClassName('j-gotonext')[0].click();
+            setTimeout(function () {
+                [].forEach.call(document.getElementsByClassName('s'), e => {
+                    e.children[e.children.length - 1].children[0].checked = true
+                });
+                [].forEach.call(document.getElementsByClassName('j-textarea'), e => {
+                    e.value = judge
+                });
+                document.getElementsByClassName('j-submitbtn')[0].click();
+            }, 1500);
+            console.log(times + 1);
         }, 2500);
     } else {
         alert("次数错误，范围1 ~ 20");
     }
     return false;
 }
+
+
