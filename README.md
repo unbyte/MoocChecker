@@ -1,3 +1,9 @@
+# 欢迎使用功能更强的浏览器插件
+
+> Chrome，Firefox，Opera均可使用
+
+https://github.com/unbyte/mooc-assistant
+
 # MoocHomeworkCheck100
 慕课作业互评一键一百分
 ## 食用方法
